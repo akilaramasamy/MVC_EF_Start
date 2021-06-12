@@ -9,5 +9,9 @@ namespace MVC_EF_Start.DataAccess
 
     public DbSet<Company> Companies { get; set; }
     public DbSet<Quote> Quotes { get; set; }
-  }
+
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<BookCategory> BookCategories { get; set; }
+    }
 }

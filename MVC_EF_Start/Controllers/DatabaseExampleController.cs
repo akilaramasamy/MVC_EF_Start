@@ -49,6 +49,7 @@ namespace MVC_EF_Start.Controllers
       MyCompanyQuote1.label = "Nov 23";
       MyCompanyQuote1.changeOverTime = 0.56F;
       MyCompanyQuote1.symbol = "MCOB";
+      MyCompanyQuote1.Company = MyCompany;
 
       Quote MyCompanyQuote2 = new Quote();
       //MyCompanyQuote1.EquityId = 123;
@@ -65,6 +66,7 @@ namespace MVC_EF_Start.Controllers
       MyCompanyQuote2.label = "Nov 23";
       MyCompanyQuote2.changeOverTime = 0.56F;
       MyCompanyQuote2.symbol = "MCOB";
+      MyCompanyQuote2.Company = MyCompany;
 
       dbContext.Companies.Add(MyCompany);
       dbContext.Quotes.Add(MyCompanyQuote1);

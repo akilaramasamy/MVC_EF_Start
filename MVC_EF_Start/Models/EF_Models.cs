@@ -5,7 +5,6 @@ namespace MVC_EF_Start.Models
 {
   public class Company
   {
-    [Key]
     public string symbol { get; set; }
     public string name { get; set; }
     public string date { get; set; }
@@ -13,11 +12,12 @@ namespace MVC_EF_Start.Models
     public string type { get; set; }
     public string iexId { get; set; }
     public List<Quote> Quotes { get; set; }
-  }
+    public int Id { get; set; }
+    }
 
   public class Quote
   {
-    public int QuoteId { get; set; }
+    public int Id { get; set; }
     public string date { get; set; }
     public float open { get; set; }
     public float high { get; set; }
@@ -31,7 +31,9 @@ namespace MVC_EF_Start.Models
     public string label { get; set; }
     public float changeOverTime { get; set; }
     public string symbol { get; set; }
-  }
+    public string ClassDemo { get; set; }
+    public Company Company { get; set; }
+    }
 
   public class ChartRoot
   {
